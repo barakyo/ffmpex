@@ -19,6 +19,7 @@ defmodule FFmpex.Options.Muxers do
     segment_format:       %Option{name: "-segment_format", require_arg: true, contexts: [:input, :output]},
     segment_time:         %Option{name: "-segment_time", require_arg: true, contexts: [:input, :output]},
     segment_list:         %Option{name: "-segment_list", require_arg: true, contexts: [:input, :output]},
+    hls_key_info_file:    %Option{name: "-hls_key_info_file", require_arg: true, contexts: [:input, :output]},
   }
 
   require FFmpex.Options.Helpers
